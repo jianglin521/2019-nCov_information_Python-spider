@@ -16,19 +16,19 @@ deathsNum = []
 suspectedIncr = []
 
 for e in res['data']:
-    print(e)
+    print(e, '我是查询数据')
     date.append(e['date'])
     confirmedNum.append(e['confirmedNum'])
     suspectedNum.append(e['suspectedNum'])
     curesNum.append(e['curesNum'])
     deathsNum.append(e['deathsNum'])
-    suspectedIncr.append(e['suspectedIncr'])
+    # suspectedIncr.append(e['suspectedIncr'])
 
-date.reverse()
-confirmedNum.reverse()
-suspectedNum.reverse()
-curesNum.reverse()
-deathsNum.reverse()
+# date.reverse()
+# confirmedNum.reverse()
+# suspectedNum.reverse()
+# curesNum.reverse()
+# deathsNum.reverse()
 
 line = Line('疫情趋势','武汉加油！中国加油！')
 line.add('确诊人数',date,confirmedNum,is_smooth=True)
